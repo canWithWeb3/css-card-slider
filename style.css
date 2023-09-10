@@ -33,6 +33,7 @@ body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  z-index: 6;
 }
 .events-slider .wrapper .arrow:active{
   transform: translateY(-50%) scale(0.85);
@@ -46,7 +47,7 @@ body {
 .events-slider .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
+  grid-auto-columns: calc((100% / 3) - 62px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -81,6 +82,8 @@ body {
   cursor: pointer;
   flex-direction: column;
   border-radius: 8px !important;
+  border-color: #fff;
+  overflow: hidden;
 }
 .events-slider .carousel .card .img {
   background: #8B53FF;
